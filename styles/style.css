@@ -2,4 +2,29 @@
 
 .page {
   /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
+    display:grid;
+    grid-template-rows: min-content;
+    font-family: var(--main-font), sans-serif;
+}
+@media (max-width: 375px) {
+    .page {
+        display:grid;
+        max-inline-size: var(--mobile-width);
+        font-size: var(--main-font-size);
+    }
+
+    .header__title {
+        color: var(--header-color);
+        font-size: var(--header-title-size);
+    }
+}
+
+
+.main__section-images {
+    display: grid;
+    row-gap: 20px;
+}
+
+.main__section-images img {
+    padding: 5px;
 }

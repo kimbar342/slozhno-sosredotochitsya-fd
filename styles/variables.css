@@ -2,3 +2,14 @@
   Переменные для вашего проекта
   и их переопределение под различные устройства
 */
+@import "../fonts/fonts.css";
+
+:root {
+    --main-font: 'IBM Plex mono', sans-serif;
+    --mobile-width: 375px;
+    --laptop-width: 768px;
+    --desktop-width: 1024px;
+    --header-color: #db00ff;
+    --header-title-size: clamp(7.25rem, 5.7694rem + 6.3174vw, 9.8125rem);
+    --main-font-size: 18px;
+}
