@@ -2,29 +2,119 @@
 
 .page {
   /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
-    display:grid;
-    grid-template-rows: min-content;
     font-family: var(--main-font), sans-serif;
+    font-size: var(--main-font-size);
 }
-@media (max-width: 375px) {
-    .page {
-        display:grid;
-        max-inline-size: var(--mobile-width);
-        font-size: var(--main-font-size);
-    }
+.header__rec{
 
-    .header__title {
-        color: var(--header-color);
-        font-size: var(--header-title-size);
-    }
+}
+.header__rec::before {
+    content: 'rec';
+    display: inline-block;
+    max-inline-size: 50px;
+    max-block-size: 50px;
+    text-transform: uppercase;
 }
 
+.header__rec::after {
+    content: '';
+    display: inline-block;
+    inline-size: 9px;
+    block-size: 9px;
+    background: currentColor;
+    box-shadow: 0 0 3px 2px var(--header-decoration-color);
+    border-radius: 100%;
+    justify-self: center;
+    margin-inline-start: 10px;
+    margin-block-end: 1px;
+}
+
+.header__title {
+    align-self: flex-start;
+}
+
+.header {
+}
+
+.decorated-zone {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: end;
+    color: var(--header-decoration-color);
+}
+
+.header__theme-menu {
+}
+
+.header__theme-menu-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-block-start: 40px;
+}
+
+.header__theme-menu-item {
+}
+
+.header__theme-menu-button {
+    background-color: transparent;
+    text-transform: lowercase;
+    padding: 2px 13px;
+    border: none;
+}
+
+.header__theme-menu-button_type_light {
+}
+
+.header__theme-menu-button_active {
+    border: 1px solid var(--header-decoration-color);
+}
+
+.header__theme-menu-button_type_auto {
+}
+
+.header__theme-menu-button_type_dark {
+}
+
+.header__title {
+    text-shadow: 4px 4px 0 var(--accent-color);
+}
+
+
+.header__description {
+    color: var(--main-color);
+    background-color: var(--header-decoration-color);
+}
+
+.main {
+}
+
+.main__section {
+}
+
+.main__section-title {
+}
+
+.main__section-text {
+}
 
 .main__section-images {
-    display: grid;
-    row-gap: 20px;
+    width: 100%;
 }
 
-.main__section-images img {
-    padding: 5px;
+@media (width >= 375px) {
+    .header__title {
+        font-size: var(--header-mobile-title-size);
+    }
+}
+@media (width >= 768px) {
+    .header__title {
+        font-size: var(--header-desctop-title-size);
+    }
+}
+@media (width >= 1024px) {
+    .header__title {
+        font-size: var(--header-desctop-title-size);
+    }
 }

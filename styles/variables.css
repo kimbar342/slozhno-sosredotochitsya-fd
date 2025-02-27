@@ -6,10 +6,11 @@
 
 :root {
     --main-font: 'IBM Plex mono', sans-serif;
-    --mobile-width: 375px;
-    --laptop-width: 768px;
-    --desktop-width: 1024px;
-    --header-color: #db00ff;
-    --header-title-size: clamp(7.25rem, 5.7694rem + 6.3174vw, 9.8125rem);
-    --main-font-size: 18px;
+    --accent-color: #db00ff;
+    --header-decoration-color: #ff0070;
+    --main-color: #fff;
+    --background-color: #000028;
+    --header-mobile-title-size: clamp(7.25rem, 5.7694rem + 6.3174vw, 9.8125rem);
+    --header-desctop-title-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+    --main-font-size: 1.125;
 }
