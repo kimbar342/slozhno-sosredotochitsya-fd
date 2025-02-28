@@ -10,7 +10,10 @@
     --header-decoration-color: #ff0070;
     --main-color: #fff;
     --background-color: #000028;
+    --color-dark-theme: #f1b2ce;
+    --color-light-theme: #353430;
     --header-mobile-title-size: clamp(7.25rem, 5.7694rem + 6.3174vw, 9.8125rem);
     --header-desctop-title-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
-    --main-font-size: 1.125;
+    --main-font-size: 1.125rem;
+    --background-image: url('../images/cover-image.png');
 }

@@ -4,19 +4,21 @@
   /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
     font-family: var(--main-font), sans-serif;
     font-size: var(--main-font-size);
-}
-.header__rec{
+    background: var(--background-image) no-repeat center center fixed;
+    background-size: cover;
 
 }
-.header__rec::before {
-    content: 'rec';
-    display: inline-block;
-    max-inline-size: 50px;
-    max-block-size: 50px;
+.header__rec-wrapper{
+    display: flex;
+}
+.header__rec-title {
     text-transform: uppercase;
+    align-items: center;
+    justify-content: center;
+    max-inline-size: 50px;
 }
 
-.header__rec::after {
+.header__rec-circle::after {
     content: '';
     display: inline-block;
     inline-size: 9px;
@@ -27,13 +29,35 @@
     justify-self: center;
     margin-inline-start: 10px;
     margin-block-end: 1px;
+    margin-inline-end: -15px;
+}
+
+.header__rec-angle-top {
+    content: '';
+    display: inline-block;
+    inline-size: 25px;
+    block-size: 25px;
+    border-top: 1px solid var(--header-decoration-color);
+    border-right: 1px solid var(--header-decoration-color);
+}
+
+.header__rec-angle-bottom {
+    content: '';
+    align-self: start;
+    inline-size: 25px;
+    block-size: 25px;
+    border-bottom: 1px solid var(--header-decoration-color);
+    border-left: 1px solid var(--header-decoration-color);
+    margin-block-start: 31px;
 }
 
 .header__title {
     align-self: flex-start;
+    margin-block-start: 65px;
 }
 
 .header {
+    margin-block-end: 40px;
 }
 
 .decorated-zone {
@@ -83,29 +107,66 @@
 
 
 .header__description {
-    color: var(--main-color);
+    color: var(--background-color);
     background-color: var(--header-decoration-color);
 }
 
 .main {
+    color: var(--color-dark-theme);
 }
 
-.main__section {
+.main__link {
+    text-shadow : 1px 1px var(--header-decoration-color);
+    text-decoration: none;
 }
 
-.main__section-title {
+.main__link:hover {
+    border-block-end: 1px solid var(--color-dark-theme);
 }
 
-.main__section-text {
+.main__link:focus {
+    outline: none;
+    border: 1px solid var(--color-dark-theme);
 }
 
-.main__section-images {
-    width: 100%;
+.section-title {
+    color: var(--header-decoration-color);
+    margin-block-end: 20px;
+}
+
+.article-header {
+    background-color: var(--header-decoration-color);
+    color: var(--background-color);
+    font-weight: bold;
+    margin-block-end: 10px;
+}
+
+.main__section_rules header {
+    font-weight: normal;
+}
+
+.section-rules-title {
+    margin-block-end: 20px;
+    font-weight: bold;
+    color: var(--background-color);
+    background-color: var(--header-decoration-color);
+}
+
+.main__section-images img {
+    max-inline-size: 100%;
+}
+
+.footer {
+    display: flex;
 }
 
 @media (width >= 375px) {
     .header__title {
         font-size: var(--header-mobile-title-size);
+    }
+
+    .header__description {
+        max-inline-size: 364px;
     }
 }
 @media (width >= 768px) {
