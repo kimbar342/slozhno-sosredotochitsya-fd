@@ -1,3 +1,5 @@
+/* Глобальные стили для проекта, их можно дополнять и менять по желанию */
+
 *,
 *::before,
 *::after {
@@ -8,7 +10,7 @@ body {
   min-inline-size: 375px;
   max-inline-size: 1440px;
   margin: 0 auto;
-  padding: 0;
+  padding: 10px;
 }
 
 h1,
@@ -40,12 +42,6 @@ a {
   line-height: inherit;
 }
 
-.visually-hidden {
-  clip: rect(0 0 0 0);
-  clip-path: inset(50%);
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-  position: absolute;
-  white-space: nowrap;
+img {
+  max-width: calc(100vw - 20px);
 }

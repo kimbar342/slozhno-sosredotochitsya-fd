@@ -1,3 +1,7 @@
+/*
+  Переменные для вашего проекта
+  и их переопределение под различные устройства
+*/
 :root.theme-dark {
     --title-color: #DB00FF;
     --text-color: #F1B2CE;
@@ -23,3 +27,4 @@
     --focus-color:var(--text-color);
     --hover-color:rgba(50, 49, 45, 0.4);
 }
+
