@@ -1,19 +1,25 @@
-/*
-  Переменные для вашего проекта
-  и их переопределение под различные устройства
-*/
-@import "../fonts/fonts.css";
+:root.theme-dark {
+    --title-color: #DB00FF;
+    --text-color: #F1B2CE;
+    --accent-color: #FF0070;
+    --h2-color:var(--accent-color);
+    --h3-color: #000028;
+    --bg-image: url("../images/cover-image-dark.png");
+    --bg-color: #000028;
+    --rect-color:var(--accent-color);
+    --focus-color:var(--accent-color);
+    --hover-color: rgba(255, 0, 112, 0.4);
+}
 
-:root {
-    --main-font: 'IBM Plex mono', sans-serif;
-    --accent-color: #db00ff;
-    --header-decoration-color: #ff0070;
-    --main-color: #fff;
-    --background-color: #000028;
-    --color-dark-theme: #f1b2ce;
-    --color-light-theme: #353430;
-    --header-mobile-title-size: clamp(7.25rem, 5.7694rem + 6.3174vw, 9.8125rem);
-    --header-desctop-title-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
-    --main-font-size: 1.125rem;
-    --background-image: url('../images/cover-image.png');
+:root.theme-light {
+    --title-color: #FFC2E6;
+    --text-color: #353430;
+    --accent-color: #FF8DCB;
+    --h2-color: var(--text-color);
+    --h3-color: #353430;
+    --bg-image: url("../images/cover-image-light.png");
+    --bg-color: #fff1f7;
+    --rect-color: #353430;
+    --focus-color:var(--text-color);
+    --hover-color:rgba(50, 49, 45, 0.4);
 }
