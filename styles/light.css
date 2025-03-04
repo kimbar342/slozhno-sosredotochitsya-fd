@@ -1,5 +1,5 @@
 :root.theme-light {
-    .header_theme-REC-text {
+    .header_theme-rec-text {
         display: none;
     }
     .circle {
@@ -9,7 +9,7 @@
 
 :root.theme-auto {
     @media (prefers-color-scheme: light) {
-        .header_theme-REC-text {
+        .header_theme-rec-text {
             display: none;
         }
         .circle {
