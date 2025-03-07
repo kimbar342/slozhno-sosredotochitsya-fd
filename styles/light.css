@@ -9,26 +9,12 @@
         display: none;
     }
 
-    .header__theme-menu {
-        padding-block-start: 75px;
-    }
-
     @media (width >= 768px) {
-        .header__theme-menu {
-            padding-block-start: 192px;
-        }
+
     }
 
     @media (width >= 1024px) {
-        .header__theme-menu {
-            align-self: start;
-            justify-self: center;
-            padding-block-start: 0;
-            grid-column: 1;
-            grid-row: 1;
-            display: flex;
-            margin-block-start: -3px;
-        }
+
     }
 }
 
@@ -43,14 +29,10 @@
 @media (prefers-color-scheme: light) {
     :root {
         --title-color: #FFC2E6;
-        --text-color: #353430;
-        --accent-color: #FF8DCB;
-        --h2-color: var(--text-color);
-        --h3-color: #353430;
+        --main-color: #353430;
+        --bg-color-block: #FF8DCB;
         --bg-image: url("../images/cover-image-light.png");
         --bg-color: #fff1f7;
-        --rect-color: #353430;
-        --focus-color:var(--text-color);
         --hover-color:rgba(50, 49, 45, 0.4);
     }
 }

@@ -7,14 +7,11 @@
 @media (prefers-color-scheme: dark) {
     :root {
         --title-color: #DB00FF;
-        --text-color: #F1B2CE;
-        --accent-color: #FF0070;
-        --h2-color:var(--accent-color);
-        --h3-color: #000028;
+        --main-decor-color: #FF0070;
+        --main-text-color: #F1B2CE;
+        --bg-color-block: #FF0070;
         --bg-image: url("../images/cover-image-dark.png");
         --bg-color: #000028;
-        --rect-color:var(--accent-color);
-        --focus-color:var(--accent-color);
         --hover-color: rgba(255, 0, 112, 0.4);
     }
 }
