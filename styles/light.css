@@ -5,22 +5,14 @@
 */
 
 :root.theme-light {
-    .header_theme-rec-text {
+    .container__decor {
         display: none;
-    }
-
-    @media (width >= 768px) {
-
-    }
-
-    @media (width >= 1024px) {
-
     }
 }
 
 :root.theme-auto {
     @media (prefers-color-scheme: light) {
-        .header_theme-rec-text {
+        .container__decor {
             display: none;
         }
     }

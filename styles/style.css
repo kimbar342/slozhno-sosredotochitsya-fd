@@ -117,3 +117,13 @@
     color: var(--subtitle-color);
     margin-block-start: 20px;
 }
+@media (width >= 640px) {
+    .burger-icon {
+        display: none;
+    }
+
+    .navbar__links_list {
+        flex-direction: row;
+        margin: 0;
+    }
+}
