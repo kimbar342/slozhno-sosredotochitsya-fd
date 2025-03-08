@@ -117,13 +117,127 @@
     color: var(--subtitle-color);
     margin-block-start: 20px;
 }
-@media (width >= 640px) {
-    .burger-icon {
-        display: none;
+
+.main__section-concentration {
+    margin-block-start: 41px;
+}
+
+.wrapper__article {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-block-end: 50px;
+}
+
+.main__section-title {
+    color: var(--accent-color);
+    background-color: transparent;
+    margin-block-end: 21px;
+}
+
+.main__section-subtitle {
+    color: var(--subtitle-color);
+    background-color: var(--main-decor-color);
+    margin-block-end: 10px;
+}
+
+.subtitle {
+    margin-block-end: 20px
+}
+
+.main__section-text {
+    line-height: var(--main-line-height);
+}
+
+.main__section-images {
+
+}
+
+.images-wrapper {
+    display: grid;
+    gap: 10px;
+    margin-block-start: 2px;
+}
+
+.main__section-image {
+    width: 100%;
+    object-fit: cover;
+    margin: 0;
+}
+
+.footer {
+    padding-block-start: 10px;
+    min-block-size: 658px;
+    display: grid;
+    margin-block-start: 40px;
+}
+
+.footer__theme-title {
+    place-self: center;
+    font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+    line-height: 95.7px;
+    color: var(--title-color);
+    text-shadow: 2px 2px var(--accent-color);
+}
+
+@media (width >= 768px) {
+    .header {
+        min-block-size: 1014px;
+        padding: 10px 10px 20px;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: min-content min(420px) min-content min(274px);
     }
 
-    .navbar__links_list {
+    .header__theme-menu {
+        margin-block-start: 190px;
+    }
+
+    .header__title {
+        margin-inline-start: -20px;
+        margin-block-start: 2px;
+
+    }
+
+    .header__subtitle-container {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(160px, 1fr));
+    }
+
+    .header__subtitle {
+        align-self: end;
+        justify-self: end;
+        grid-column-start: 2;
+    }
+}
+
+@media (width >= 1024px) {
+    .header {
+        min-block-size: 768px;
+        padding-block-end: 30px;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: min-content min(280px) min(127px);
+    }
+
+    .header__container {
+        align-self: start;
+        justify-content: center;
+    }
+
+    .header__theme-menu {
+        margin-block-start: 0;
+    }
+
+    .header__theme-menu-list {
+        margin-block-start: -2px;
+        display: flex;
         flex-direction: row;
-        margin: 0;
+    }
+
+    .header__title {
+        font-size: var(--main-title-laptop);
+        grid-row-start: 3;
+        margin-block-start: -2px;
     }
 }
