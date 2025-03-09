@@ -20,7 +20,6 @@ h6,
 p {
   margin: 0;
   font-size: var(--main-font-size);
-  font-weight: var(--main-font-weight);
 }
 
 ul {

@@ -22,4 +22,10 @@
     --bg-image: url("../images/cover-image-light.png");
     --bg-color: #fff1f7;
     --hover-color:rgba(50, 49, 45, 0.4);
+    --main-bg-color: #FF8DCB;
+    --subtitle-color: #353430;
+    --section-title-color: #353430;
+    --section-subtitle-color: #353430;
+    --section-subtitle-bg: #FF8DCB;
+    --shadow-color: #FF0070;
 }

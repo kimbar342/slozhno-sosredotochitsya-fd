@@ -13,5 +13,11 @@
         --bg-image: url("../images/cover-image-dark.png");
         --bg-color: #000028;
         --hover-color: rgba(255, 0, 112, 0.4);
+        --main-bg-color: #FF0070;
+        --subtitle-color: #000028;
+        --section-title-color: #FF0070;
+        --section-subtitle-color: #000028;
+        --section-subtitle-bg: #FF0070;
+        --shadow-color: #FF0070;
     }
 }

@@ -113,9 +113,10 @@
 
 .header__subtitle {
     font-size: var(--main-font-size);
-    background-color: var(--main-decor-color);
+    background-color: var(--main-bg-color);
     color: var(--subtitle-color);
     margin-block-start: 20px;
+    font-weight: var(--main-font-weight);
 }
 
 .main__section-concentration {
@@ -130,27 +131,25 @@
 }
 
 .main__section-title {
-    color: var(--accent-color);
+    color: var(--section-title-color);
     background-color: transparent;
     margin-block-end: 21px;
+    font-weight: var(--main-font-weight);
 }
 
 .main__section-subtitle {
-    color: var(--subtitle-color);
-    background-color: var(--main-decor-color);
+    color: var(--section-subtitle-color);
+    background-color: var(--section-subtitle-bg);
     margin-block-end: 10px;
+    font-weight: var(--main-font-weight);
 }
 
 .subtitle {
-    margin-block-end: 20px
+    margin-block-end: 20px;
 }
 
 .main__section-text {
     line-height: var(--main-line-height);
-}
-
-.main__section-images {
-
 }
 
 .images-wrapper {
@@ -177,7 +176,7 @@
     font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
     line-height: 95.7px;
     color: var(--title-color);
-    text-shadow: 2px 2px var(--accent-color);
+    text-shadow: 2px 2px var(--shadow-color);
 }
 
 @media (width >= 768px) {
@@ -201,13 +200,96 @@
 
     .header__subtitle-container {
         display: grid;
-        grid-template-columns: repeat(2, minmax(160px, 1fr));
+        grid-template-columns: repeat(2, 1fr);
     }
 
     .header__subtitle {
         align-self: end;
         justify-self: end;
         grid-column-start: 2;
+    }
+
+    .main__section-concentration {
+        padding: 20px 10px;
+        display: grid;
+        grid-template-columns: min(236px, 315px) 1fr;
+        gap: 20px;
+    }
+
+    .main__section-attention {
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .attention__container-title {
+        display: grid;
+        grid-template-columns: min(236px, 315px) 1fr;
+    }
+
+    .main__section-about {
+        padding: 10px;
+        margin-block-start: 10px;
+        display: grid;
+        grid-template-columns: min(236px) 1fr;
+        gap: 20px;
+    }
+
+    .main__section-images {
+        padding: 10px;
+        margin-block-start: 12px;
+    }
+
+    .subtitle-title-image {
+        margin-block-end: 20px;
+    }
+
+    .images-wrapper {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        gap: 20px;
+        max-block-size: 780px;
+    }
+
+    .main__section-image {
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .image__sunrise {
+        grid-row: 1;
+        grid-column: span 2;
+    }
+
+    .imate__ice-creme {
+        grid-column: 3;
+        grid-row: 1 / span 2;
+    }
+
+    .imate__tape {
+        grid-column: 1;
+        grid-row: 2 / 5;
+    }
+
+    .image__book {
+        grid-column: 2;
+        grid-row: 2;
+    }
+
+    .imate__street {
+        grid-column: 2 / span 2;
+        grid-row: 3 / 5;
+    }
+
+    .main {
+        margin-block-end: 60px;
+    }
+
+    .footer {
+        min-block-size: 1014px;
+        padding: 10px 10px 20px;
+
     }
 }
 
@@ -239,5 +321,49 @@
         font-size: var(--main-title-laptop);
         grid-row-start: 3;
         margin-block-start: -2px;
+    }
+
+    .main__section-concentration {
+        padding: 10px;
+        display: grid;
+        grid-template-columns: min(315px) 1fr;
+        gap: 20px;
+    }
+
+    .main__section-attention {
+        margin-block-start: 10px;
+    }
+
+    .attention__container-title {
+        display: grid;
+        grid-template-columns: 315px 1fr;
+    }
+
+    .wrapper__article--pc {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+
+    .about__wrapper--pc {
+        display: grid;
+        grid-template-columns: 315px 1fr;
+        gap: 20px;
+    }
+
+    .main__section-image {
+        object-fit: cover;
+    }
+
+    .images-wrapper {
+        max-block-size: 1045px;
+    }
+
+    .footer {
+        min-block-size: 758px;
+    }
+
+    .footer__theme-title {
+        font-size: var(--main-title-laptop);
     }
 }
