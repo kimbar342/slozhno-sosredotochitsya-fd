@@ -14,8 +14,8 @@
 
 .header {
     block-size: 100vh;
-    min-block-size: 668px;
-    padding-block-end: 10px;
+    min-block-size: 648px;
+    padding-block-end: 20px;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: min-content minmax(165px, auto) minmax(185px, auto) min-content;
@@ -121,7 +121,7 @@
 }
 
 .main__section-concentration {
-    margin-block-start: 41px;
+    margin-block-start: 31px;
 }
 
 .wrapper__article {
@@ -181,9 +181,9 @@
 .footer {
     padding-block-start: 20px;
     block-size: 100vh;
-    min-block-size: 668px;
+    min-block-size: 648px;
     display: grid;
-    margin-block-start: 40px;
+    margin-block-start: 30px;
 }
 
 .footer__theme-title {
