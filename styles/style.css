@@ -3,7 +3,7 @@
     font-family: "IBM Plex mono", monospace;
     font-size: var(--main-font-size);
     background-color: var(--bg-color);
-    color: var(--main-text-color);
+    color: var(--text-color);
     background-image: var(--bg-image);
     background-position: center;
     background-size: cover;
@@ -19,7 +19,7 @@
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: min-content minmax(165px, auto) minmax(185px, auto) min-content;
-    color: var(--main-decor-color)
+    color: var(--title-color)
 }
 
 .header__container {
@@ -48,7 +48,7 @@
     inline-size: 9px;
     block-size: 9px;
     border-radius: 50%;
-    box-shadow: 0 0 4px 2px var(--main-decor-color);
+    box-shadow: 0 0 4px 2px var(--accent-color);
     background: currentColor;
 }
 
@@ -58,8 +58,8 @@
     justify-self: end;
     inline-size: 22px;
     block-size: 22px;
-    border-block-start: 1px solid var(--main-decor-color);
-    border-inline-end: 1px solid var(--main-decor-color);
+    border-block-start: 1px solid var(--accent-color);
+    border-inline-end: 1px solid var(--accent-color);
 }
 
 .decorated-zone::after {
@@ -67,8 +67,8 @@
     align-self: end;
     inline-size: 22px;
     block-size: 22px;
-    border-block-end: 1px solid var(--main-decor-color);
-    border-inline-start: 1px solid var(--main-decor-color);
+    border-block-end: 1px solid var(--accent-color);
+    border-inline-start: 1px solid var(--accent-color);
 }
 
 .header__theme-menu {
@@ -91,7 +91,7 @@
 }
 
 .header__theme-menu-button_active {
-    outline: 1px solid var(--main-decor-color);
+    outline: 1px solid var(--focus-color);
     pointer-events: none;
 }
 
@@ -114,10 +114,10 @@
 
 .header__subtitle {
     font-size: var(--main-font-size);
-    background-color: var(--main-bg-color);
-    color: var(--subtitle-color);
+    background-color: var(--accent-color);
+    color: var(--main-subtitle-color);
     margin-block-start: 20px;
-    font-weight: var(--main-font-weight);
+    font-weight: bold;
 }
 
 .main__section-concentration {
@@ -132,17 +132,17 @@
 }
 
 .main__section-title {
-    color: var(--section-title-color);
+    color: var(--main-title-color);
     background-color: transparent;
     margin-block-end: 21px;
-    font-weight: var(--main-font-weight);
+    font-weight: bold;
 }
 
 .main__section-subtitle {
-    color: var(--section-subtitle-color);
-    background-color: var(--section-subtitle-bg);
+    color: var(--main-subtitle-color);
+    background-color: var(--accent-color);
     margin-block-end: 10px;
-    font-weight: var(--main-font-weight);
+    font-weight: bold;
 }
 
 .subtitle {
@@ -150,7 +150,7 @@
 }
 
 .main__section-text {
-    line-height: var(--main-line-height);
+    line-height: var(--text-color);
 }
 
 .images-wrapper {
@@ -171,11 +171,11 @@
 }
 
 .main__text-link:hover {
-    border-bottom: 1px solid var(--main-text-color);
+    border-bottom: 1px solid var(--text-color);
 }
 
 .main__text-link:focus-visible {
-    outline: 1px solid var(--main-text-color);
+    outline: 1px solid var(--text-color);
 }
 
 .footer {
@@ -191,7 +191,7 @@
     font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
     line-height: 95.7px;
     color: var(--title-color);
-    text-shadow: 2px 2px var(--shadow-color);
+    text-shadow: 2px 2px var(--accent-color);
 }
 
 @media (width >= 768px) {
