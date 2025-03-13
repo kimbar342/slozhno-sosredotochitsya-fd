@@ -367,6 +367,7 @@
         flex-direction: row;
         align-items: center;
         padding-block-end: 10px;
+        margin-block-start: 0;
     }
 
     .decorated-zone::before {
@@ -383,10 +384,6 @@
 
     .container__decor {
         top: 22px;
-    }
-
-    .header__theme-menu {
-        margin-block-start: 0;
     }
 
     .header__theme-menu-list {
