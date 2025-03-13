@@ -3,6 +3,18 @@
   Здесь окажутся стили, которые нужно переопределить принудительно,
   переключая тему
 */
+:root.theme-light {
+    --title-color: #FFC2E6;
+    --text-color: #353430;
+    --accent-color: #FF8DCB;
+    --main-title-color: var(--text-color);
+    --main-subtitle-color: #353430;
+    --bg-image: url("../images/cover-image-light.png");
+    --bg-color: #fff1f7;
+    --rect-color: #353430;
+    --focus-color:var(--text-color);
+    --hover-color:rgba(50, 49, 45, 0.4);
+}
 
 :root.theme-light {
     .container__decor {
